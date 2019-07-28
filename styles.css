@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(198, 250, 198);
+    text-align: center;
+  }
+  
+  .app {
+    text-align: center;
+    background-color: rgb(103, 230, 152);
+    margin: -15px;
+    padding: 40px;
+    border-radius: 5px;
+    font-family: sans-serif;
+  }
+  
+  .wrapper {
+    background-color: rgb(198, 250, 198);
+    padding: 15px;
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .carousel {
+    position: relative;
+  }
+  
+  .carousel img {
+    width: 100%;
+  }
+  
+  .carousel .navigation button {
+    opacity: 0.6;
+  }
+  
+  .carousel .navigation button:hover {
+    opacity: 1;
+  }
+  
+  .carousel .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+    font-weight: normal;
+    font-size: 1.2em;
+    padding: 20px;
+    opacity: 0;
+  }
+  
+  .carousel:hover .description {
+    opacity: 1;
+  }
+  
+  .carousel .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .carousel .navigation .play-pause {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    text-align: center;
+  }
+  
+  .carousel .navigation .play-pause button {
+    border: none;
+    width: 25px;
+    background-color: transparent;
+    color: white;
+    font-size: 110%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  
+  .carousel .navigation .dots {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    text-align: center;
+  }
+  
+  .carousel .navigation .dots button {
+    border: none;
+    width: 20px;
+    background-color: transparent;
+    color: #fff;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000;
+  }
+  .carousel .navigation .dots button:disabled {
+    color: #fff;
+    /* opacity: 1; */
+  }
+  
+  .carousel .step-precentage {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    background-color: #fff;
+    opacity: 0.8;
+    animation: step-time linear;
+  }
+  
+  @keyframes step-time {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
